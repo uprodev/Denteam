@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168.337" height="166.225" viewBox="0 0 168.337 166.225">
+  <defs>
+    <filter id="Path_206" x="0" y="0" width="168.337" height="166.225" filterUnits="userSpaceOnUse">
+      <feOffset dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#b79c72" flood-opacity="0.443"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9182" data-name="Group 9182" transform="translate(-244.332 -469.948)">
+    <g transform="matrix(1, 0, 0, 1, 244.33, 469.95)" filter="url(#Path_206)">
+      <path id="Path_206-2" data-name="Path 206" d="M-7363.983-11342.581a20.474,20.474,0,0,0-20.118,2.535c-4.249,3.123-8.43,7.363-8.069,21.174s.313,19.453-.586,30.863-1.2,18.34,5.023,22.168,21.363,2.441,34.909-3.35,33.9-18.006,39.27-26.031,3.732-12.66-2.275-18.781S-7355.49-11339.12-7363.983-11342.581Z" transform="translate(8937.6 10238.86) rotate(-8)" fill="#f9d480"/>
+    </g>
+    <path id="Path_208" data-name="Path 208" d="M-7318.529-7535.562s9.563,4.08,12.011,5.265,4.562,4.359,2.108,7.258-7.339,7.942-12.758,10.725" transform="translate(7638.387 8065.248)" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5" opacity="0.89"/>
+  </g>
+</svg>

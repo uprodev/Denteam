@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Denteam</title>
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <main id="scroll-container" class="page-wrapper" data-scroll-container>
+      <header class="header" data-scroll data-scroll-offset="150" data-scroll-sticky data-scroll-target="#scroll-container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" /><img class="logo-fixed" src="img/logo-footer.svg" alt="" /></a>
+            <div class="navbar-container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-lg-none">
+                  <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" /><img class="logo-fixed" src="img/logo-footer.svg" alt="" /></a>
+                </div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kennis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Vacatures</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Verhalen</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Over denteam</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">MEER Over denteam</a></li>
+                      <li><a class="dropdown-item" href="#">Praktijken</a></li>
+                      <li><a class="dropdown-item" href="#">Labels</a></li>
+                      <li><a class="dropdown-item" href="#">Veel gestelde vragen</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="header-languages">
+                  <a href="#"><img src="img/language-en.svg" alt="" /><span>ENGLISH</span></a>
+                </div>
+                <div class="d-lg-none">
+                  <a href="tel:+31850608887" class="contact-phone"> <img src="img/icons/telephone.svg" alt="" />+31 85 - 06 08 887 </a>
+                </div>
+              </div>
+              <div class="header-contact">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testModal"><span>Matchtest</span></button>
+                <a href="#" class="btn btn-secondary">CONTACT</a>
+                <a href="tel:+31850608887" class="contact-phone"> <img src="img/icons/telephone.svg" alt="" />+31 85 - 06 08 887 </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="tpl-page-contacts">
+        <section class="page-banner">
+          <div class="container-fluid">
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <div class="contacts-box">
+                  <h3>Zo zijn we te bereiken</h3>
+                  <ul class="contacts-list">
+                    <li>
+                      <a href="tel:0850608887">
+                        <span class="icon"><img src="img/icons/ico-contact-telephone.svg" alt="" /></span>
+                        <span class="text"> <strong>085 - 06 08 887</strong>Maandag t/m vrijdag 09:00-17:00 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@denteamgroup.nl">
+                        <span class="icon"><img src="img/icons/ico-contact-mail.svg" alt="" /></span>
+                        <span class="text"> <strong>info@denteamgroup.nl</strong>We reageren binnen 2 dagen </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon"><img src="img/icons/ico-contact-whatsapp.svg" alt="" /></span>
+                        <span class="text"> <strong>WhatsApp met ons</strong>Open WhatsApp </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contacts-box">
+                  <h3>Stuur een bericht</h3>
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Voornaam" />
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Achternaam" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="tel" class="form-control" placeholder="Telefoonnummer" />
+                      </div>
+                      <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="E-mailadres" />
+                      </div>
+                    </div>
+                    <textarea class="form-control" placeholder="Bericht"></textarea>
+                    <button type="submit" class="btn btn-secondary">Versturen</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contacts-box">
+                  <div class="d-xl-flex">
+                    <address>
+                      <strong>Bezoekadres</strong><br />
+                      Fredriklaan 10 e<br />
+                      5616 NH Eindhoven<br />
+                      Nederland
+                    </address>
+                    <div class="account-data">
+                      <strong>Bedrijfsinformatie</strong>
+                      <ul>
+                        <li><span>KvK</span>123.456.789</li>
+                        <li><span>BTW</span>NL09 123 456 789</li>
+                        <li><span>BIC</span>AABNNL2AXXX</li>
+                        <li><span>IBAN</span>NL 09 ABNA 123 456 78</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contacts-box">
+                  <div class="socials">
+                    <div class="h4">Volg ons online</div>
+                    <ul>
+                      <li>
+                        <a href="#"><img src="img/icons/socials-01-li.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="img/icons/socials-02-ig.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="img/icons/socials-03-yt.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="img/icons/socials-04-fb.svg" alt="" /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-element-left d-none d-xl-block"><img src="img/banner-element-left.svg" alt="" /></div>
+          <div class="banner-element-right d-none d-xl-block"><img src="img/banner-element-right-01.svg" alt="" /></div>
+        </section>
+
+        <section class="cta-matchtest">
+          <div class="container-fluid">
+            <div class="cta-matchtest-inner">
+              <div class="title">
+                <div class="subtitle">Matchtest</div>
+                <h3>Denk jij dat wij <br />een match zijn?</h3>
+              </div>
+              <div class="link">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#testModal"><span>Start Matchtest</span><img src="img/icons/arrow-btn.svg" alt="" /></button>
+              </div>
+              <div class="image d-none d-lg-block"><img src="img/matchtest.png" alt="" /></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="map">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-xl-7 p-xl-0">
+                <div class="map-image">
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset="img/map.png" />
+                    <img src="img/map-m.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-5">
+                <div class="text">
+                  <h2>Altijd in de buurt lorem ipsum urabitur</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <a href="#" class="btn btn-primary"><span>BEKIJK ALLE LOCATIES</span><img src="img/icons/arrow-btn.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-with-image-wrapper">
+          <div class="text-with-image text-with-image--img-right">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <figure class="image"><img src="img/image-04.jpg" alt="" /></figure>
+                </div>
+                <div class="col-md-6">
+                  <div class="text">
+                    <h3>Wij hebben praktijken en labels door heel Nederland</h3>
+                    <p>Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    <a href="#" class="btn btn-primary"><span>Bekijk de prijktijken </span><img src="img/icons/arrow-btn.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="labels">
+          <div class="container-fluid">
+            <div class="labels-list">
+              <div class="label-centered">
+                <a href="#"><img src="img/logo-denteamgroup.svg" alt="" /></a>
+              </div>
+              <ul>
+                <li>
+                  <a href="#"><img src="img/label_cdc_white.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/label_restyle_white.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/label_denteam_white.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/label_denteamLabs_white.svg" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="cards-list cards-list-02">
+          <div class="container-fluid">
+            <div class="text-center">
+              <h3>Bekijk deze verhalen eens</h3>
+            </div>
+            <div class="cards-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card card-type-02">
+                    <img src="img/image-42.jpg" class="card-img" alt="" />
+                    <div class="card-img-overlay">
+                      <h5 class="card-subtitle">Naam van medewerker</h5>
+                      <h3 class="card-title">Titel van verhaal</h3>
+                    </div>
+                    <a href="#" class="card-link"><img src="img/icons/arrow-right.svg" alt="" /></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-type-02">
+                    <img src="img/image-43.jpg" class="card-img" alt="" />
+                    <div class="card-img-overlay">
+                      <h5 class="card-subtitle">Naam van medewerker</h5>
+                      <h3 class="card-title">Titel van verhaal</h3>
+                    </div>
+                    <a href="#" class="card-link"><img src="img/icons/arrow-right.svg" alt="" /></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-type-02">
+                    <img src="img/image-11.jpg" class="card-img" alt="" />
+                    <div class="card-img-overlay">
+                      <h5 class="card-subtitle">Naam van medewerker</h5>
+                      <h3 class="card-title">Titel van verhaal</h3>
+                    </div>
+                    <a href="#" class="card-link"><img src="img/icons/arrow-right.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer footer--with-cta">
+        <section class="cta-contacts">
+          <div class="container-fluid">
+            <div class="cta-contacts-inner">
+              <div class="title">
+                <h3>Neem gerust contact op</h3>
+              </div>
+              <div class="form">
+                <form action="#">
+                  <div class="wrapper">
+                    <div class="field">
+                      <input type="text" class="form-control" placeholder="Naam" />
+                    </div>
+                    <div class="field">
+                      <input type="tel" class="form-control" placeholder="Telefoon" />
+                    </div>
+                    <div class="submit">
+                      <button type="submit" class="btn btn-secondary">Bel mij</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="image d-none d-lg-block"><img src="img/contacts.png" alt="" /></div>
+            </div>
+          </div>
+        </section>
+        <div class="container-fluid">
+          <div class="socials">
+            <div class="h4">Volg ons online</div>
+            <ul>
+              <li>
+                <a href="#"><img src="img/icons/socials-footer-01-li.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icons/socials-footer-02-ig.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icons/socials-footer-03-yt.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icons/socials-footer-04-fb.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="f-logo d-none d-lg-block">
+                <a href="#"><img src="img/logo-footer.svg" alt="" /></a>
+              </div>
+              <address>
+                <p><strong>Denteam Group B.V.</strong><br />Fredriklaan 10 e<br />5616 NH Eindhoven</p>
+              </address>
+              <div class="f-contacts">
+                <p>
+                  <a href="maito:info@denteamgroup.nl"> <span>E:</span>info@denteamgroup.nl </a>
+                </p>
+                <p>
+                  <a href="tel:0401234567"> <span>T:</span>040 – 123 456 7 </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+              <div class="row">
+                <div class="col-lg-4">
+                  <nav class="f-nav">
+                    <div class="f-nav-title">Vacatures</div>
+                    <ul>
+                      <li><a href="#">Tandarts</a></li>
+                      <li><a href="#">Tandartsassistent</a></li>
+                      <li><a href="#">Preventie assistent </a></li>
+                      <li><a href="#">Baliemedewerker</a></li>
+                      <li><a href="#">Mondhygiëniste</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-lg-4">
+                  <nav class="f-nav">
+                    <div class="f-nav-title">Verhalen</div>
+                    <ul>
+                      <li><a href="#">Sed posuere consectetur</a></li>
+                      <li><a href="#">Est at lobortis</a></li>
+                      <li><a href="#">Donec id elit non mi porta</a></li>
+                      <li><a href="#">Gravida at eget metus</a></li>
+                      <li><a href="#">Maecenas faucibus </a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-lg-4">
+                  <nav class="f-nav">
+                    <div class="f-nav-title">Ook Interessant</div>
+                    <ul>
+                      <li><a href="#">Tandartsassistent worden doe je zo</a></li>
+                      <li><a href="#">Wat doet een baliemedewerker?</a></li>
+                      <li><a href="#">Donec id elit non mi porta?</a></li>
+                      <li><a href="#">Gravida at eget metus?</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="f-bottom">
+          <div class="container-fluid">
+            <ul>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Algemene voorwaarden</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">KvK63603527</a></li>
+              <li><a href="#">BTW NL12345678B01</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div class="contact-block-fixed" data-scroll data-scroll-sticky data-scroll-target="#scroll-container">
+        <a href="#">
+          <figure>
+            <img src="img/contacts-small.png" alt="" />
+          </figure>
+          <h4>Do you have <br />any questions?</h4>
+          <div class="subtitle">Plan a meeting</div>
+        </a>
+      </div>
+    </main>
+
+    <div class="modal fade" id="testModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">sluiten</button>
+          <div class="modal-body">
+            <div class="text-center">
+              <h2>Zijn wij een match?</h2>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue.</p>
+              <a href="#" class="btn btn-primary">Start matchtest<img src="img/icons/arrow-btn.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

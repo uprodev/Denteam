@@ -1,0 +1,19 @@
+<svg id="Group_9181" data-name="Group 9181" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="545" height="770" viewBox="0 0 545 770">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1899" data-name="Rectangle 1899" width="475" height="770" transform="translate(431)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.982" y1="0.506" x2="0.468" y2="0.7" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.043"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.141"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.024" y1="-0.151" x2="0.403" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.294"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_16" data-name="Mask Group 16" transform="translate(-431)" clip-path="url(#clip-path)">
+    <path id="Path_68245" data-name="Path 68245" d="M-7018.65-11323.983c-108.726-44.3-203.152-7.511-257.544,32.457s-107.915,94.253-103.3,271.049,4.01,249.036-7.507,395.078-15.358,234.783,64.3,283.784,273.492,31.278,446.89-42.863,433.915-230.52,502.708-333.25,47.783-162.084-29.125-240.44S-6909.924-11279.672-7018.65-11323.983Z" transform="translate(8640.256 9941.119) rotate(-8)" fill="url(#linear-gradient)"/>
+  </g>
+  <path id="Intersection_24" data-name="Intersection 24" d="M8939.392,13647.63c201.931-130.592,443.42-336.993,500.81-455.667,55.753-115.289,36.351-179.114-32.013-242.99h16.822c64.052,64.12,81.813,132.231,25.774,248.109-63.7,131.738-327.825,346-511.394,464.442Z" transform="translate(-8939.392 -12948.895)" fill="url(#linear-gradient-2)"/>
+</svg>
