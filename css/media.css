@@ -365,10 +365,15 @@
   .main-banner .text .dropdown {
     max-width: 470px;
   }
+  .main-banner-slider {
+    position: relative;
+  }
   .main-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;
-    width: 45%;
-    left: 55%;
+    width: 100%;
+    left: 0;
+    display: block;
+    bottom: -20px;
   }
 
   .page-banner.page-banner--image-right {
@@ -809,7 +814,7 @@
     margin: 0;
   }
 
-  .main-banner-slider {
+  .main-banner {
     padding: 128px 0 68px;
     position: relative;
     z-index: 999;
@@ -838,6 +843,7 @@
     padding-top: 28px;
   }
 
+  .main-banner,
   .page-banner,
   .details-banner,
   .main-banner-single {
@@ -1010,15 +1016,11 @@
   .main-banner .text {
     padding: 134px 0 0;
   }
-  .main-banner-slider .container-fluid {
+  .main-banner .container-fluid {
     position: relative;
   }
-  .main-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: auto;
-    top: 22px;
-  }
 
-  .main-banner-slider,
+  .main-banner,
   .page-banner,
   .details-banner {
     background-image: url(../img/bgi/DT_Triangle_01_header.svg), url(../img/bgi/DT_Triangle_02_header.svg);

@@ -1054,16 +1054,7 @@ textarea.form-control {
 --------------------------------------------------------------------------------------------------*/
 
 /* main-banner-slider */
-.main-banner-slider {
-  position: relative;
-  z-index: 9;
-  background-color: #f4f0ea;
-  background-image: url(../img/bgi/DT_Triangle_01_header-mob.svg), url(../img/bgi/DT_Triangle_02_header-mob.svg);
-  background-size: 385px 569px, 393px 576px;
-  background-position: 0 0, 0 70px;
-  background-repeat: no-repeat;
-  padding: 132px 0 43px;
-}
+
 .main-banner .dropdown-menu,
 .page-banner .dropdown-menu {
   --bs-dropdown-spacer: 0;
@@ -1117,10 +1108,25 @@ textarea.form-control {
 .page-banner .dropdown[data-bs-hover]:hover .dropdown-toggle:after {
   transform: rotate(180deg);
 }
+.main-banner .dropdown-item,
+.page-banner .dropdown-item {
+  white-space: inherit;
+}
 .main-banner .dropdown-item img,
 .page-banner .dropdown-item img {
   vertical-align: -0.07em;
   margin-right: 8px;
+}
+
+.main-banner {
+  position: relative;
+  z-index: 9;
+  background-color: #f4f0ea;
+  background-image: url(../img/bgi/DT_Triangle_01_header-mob.svg), url(../img/bgi/DT_Triangle_02_header-mob.svg);
+  background-size: 385px 569px, 393px 576px;
+  background-position: 0 0, 0 70px;
+  background-repeat: no-repeat;
+  padding: 132px 0 43px;
 }
 .main-banner figure img {
   display: block;
@@ -1143,9 +1149,9 @@ textarea.form-control {
 .main-banner .text h4 {
   margin: 74px 0 19px;
 }
-.main-banner-slider .swiper-horizontal > .swiper-pagination-bullets,
 .main-banner-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
+  display: none;
 }
 
 /* page-banner */
