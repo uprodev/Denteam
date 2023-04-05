@@ -44,6 +44,21 @@
 
 /* =Components
 --------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .cta-matchtest .container-fluid {
+    padding: 0;
+  }
+  .cta-matchtest-inner {
+    padding: 33px 20px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn.btn-primary {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal-body {
     padding: 62px 100px 75px;
@@ -74,10 +89,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  [data-scroll-container] {
-    perspective: 1px;
-  }
-
   .btn.btn-primary {
     font-size: 20px;
     letter-spacing: 2px;
@@ -278,6 +289,11 @@
 }
 
 /* page sections */
+@media screen and (min-width: 375px) {
+  .container-fluid {
+    padding: 0 40px;
+  }
+}
 @media screen and (min-width: 576px) {
   .text-with-headline .headline {
     margin: 0;
@@ -312,7 +328,7 @@
 
 @media screen and (min-width: 640px) {
   .text-with-headline {
-    padding-top: 100px;
+    padding: 100px 0;
   }
   .text-with-headline .row {
     justify-content: space-between;
@@ -395,6 +411,9 @@
     object-fit: cover;
   }
 
+  .text-with-headline {
+    padding: 100px 0 146px;
+  }
   .text-with-headline .container-fluid:before {
     right: -40px;
   }
@@ -672,6 +691,13 @@
   .contacts-box .contacts-list a strong {
     font-size: 1.5625em;
   }
+
+  .text-with-headline.text-with-headline--faq .headline:before {
+    left: -10%;
+    top: -10%;
+    width: 120%;
+    height: 120%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -687,11 +713,11 @@
     z-index: 9999;
   }
   .header-fixed {
+    position: fixed;
     background-color: #fff;
     left: 0;
     top: 0;
     width: 100%;
-    margin-top: 150px;
     z-index: 998;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
     height: 116px;
@@ -727,6 +753,15 @@
   }
   .header-fixed .navbar-nav .nav-item:last-child {
     display: block;
+  }
+  .header-fixed .navbar-nav .dropdown[data-bs-hover] .dropdown-menu {
+    background-color: #fff;
+    padding: 30px;
+    left: -20px;
+    border-radius: 0 0 20px 20px;
+  }
+  .header-fixed .navbar-nav .dropdown[data-bs-hover] .dropdown-item {
+    color: #000;
   }
 
   .navbar-brand {
@@ -788,7 +823,7 @@
     font-weight: 400;
     color: #3a3836;
     text-decoration: none;
-    transform: translateY(-100%);
+    transform: translateY(-140%);
   }
   .header-contact .contact-phone img {
     margin-right: 10px;
@@ -843,15 +878,18 @@
     padding-top: 28px;
   }
 
-  .main-banner,
-  .page-banner,
-  .details-banner,
-  .main-banner-single {
-    position: relative;
+  .main-banner:before,
+  .page-banner:before,
+  .details-banner:before,
+  .main-banner-single:before {
     z-index: 999;
   }
+  .page-banner .banner-element-left,
+  .page-banner .banner-element-right {
+    z-index: 1001;
+  }
   .page-banner.page-banner--image-right {
-    padding: 132px 0 0;
+    padding: 132px 0 5px;
   }
   .page-banner.page-banner--image-right .page-banner-image:after {
     content: url(../img/icons/thingies-reversed.svg);
@@ -1020,9 +1058,9 @@
     position: relative;
   }
 
-  .main-banner,
-  .page-banner,
-  .details-banner {
+  .main-banner:before,
+  .page-banner:before,
+  .details-banner:before {
     background-image: url(../img/bgi/DT_Triangle_01_header.svg), url(../img/bgi/DT_Triangle_02_header.svg);
     background-size: auto;
     background-position: 0 0, 160px 0;
@@ -1505,7 +1543,7 @@
     margin: 0 0 4px;
   }
   .contacts-box form {
-    padding: 23px 0 5px;
+    padding: 0 0 5px;
   }
   .contacts-box textarea.form-control {
     margin-bottom: 14px;

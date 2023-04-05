@@ -67,41 +67,23 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  // locomotive scroll
-  const scroller = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true,
-    lerp: 0.1,
-    // resetNativeScroll: true,
-    mobile: {
-      smooth: true,
-    },
-    tablet: {
-      smooth: true,
-      breakpoint: 992,
-    },
-  });
+  const lenis = new Lenis();
 
-  // sticky header
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
 
-  var scrollY = 0;
-  scroller.on("scroll", (args) => {
-    if (args.scroll.y > $(".header").outerHeight()) {
+  requestAnimationFrame(raf);
+
+  lenis.on("scroll", (e) => {
+    var scrolled = e.targetScroll;
+
+    if (scrolled > $(".header").outerHeight()) {
       $(".header").addClass("header-fixed");
     } else {
       $(".header").removeClass("header-fixed");
     }
-
-    scrollY = args.scroll.y;
-  });
-  scroller.on("init", (args) => {
-    if (args.scroll.y > $(".header").outerHeight()) {
-      $(".header").addClass("header-fixed");
-    } else {
-      $(".header").removeClass("header-fixed");
-    }
-
-    scrollY = args.scroll.y;
   });
 
   switchNavToggler();
@@ -147,12 +129,16 @@ jQuery(document).ready(function ($) {
   if ($(".cards-slider").length) {
     const swiperVacancies = new Swiper(".cards-slider", {
       spaceBetween: 35,
-      slidesPerView: "auto",
+      slidesPerView: 1,
       pagination: {
         el: ".cards-slider .swiper-pagination",
         clickable: true,
       },
       breakpoints: {
+        375: {
+          spaceBetween: 35,
+          slidesPerView: "auto",
+        },
         992: {
           slidesPerView: 3,
           spaceBetween: 44,
@@ -253,7 +239,7 @@ jQuery(document).ready(function ($) {
   if (document.querySelector(".scroll-bottom")) {
     document.querySelector(".scroll-bottom").addEventListener("click", function () {
       var nextSection = document.querySelector(".page-banner").nextElementSibling;
-      scroller.scrollTo(nextSection);
+      lenis.scrollTo(nextSection, { offset: -185, duration: 2 });
     });
   }
   // forms
