@@ -764,6 +764,37 @@
     color: #000;
   }
 
+  .languages-menu > li {
+    display: block;
+    position: relative;
+  }
+  .languages-menu a {
+    margin: 0;
+  }
+  .languages-menu > li > a {
+    position: relative;
+    z-index: 1;
+  }
+  .languages-menu a img {
+    width: 27px;
+    height: 27px;
+    border: none;
+  }
+  .languages-menu ul {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    background: #fff;
+    padding: 50px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .languages-menu li:hover ul {
+    display: block;
+  }
+
   .navbar-brand {
     width: 200px;
   }

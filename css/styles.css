@@ -919,6 +919,31 @@ textarea.form-control {
 .header-languages {
   margin: 17px 0 25px;
 }
+.languages-menu,
+.languages-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.languages-menu > li {
+  display: flex;
+}
+.languages-menu a {
+  display: block;
+  margin: 0 20px 0 0;
+}
+.languages-menu a img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+.languages-menu > li > a img {
+  border-color: #e39f24;
+}
+
 .header-languages a {
   display: flex;
   align-items: center;
