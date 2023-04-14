@@ -2294,3 +2294,27 @@ textarea.form-control {
 }
 /* End Pages
 --------------------------------------------------------------------------------------------------*/
+
+.wrap_svl_center .images_wrap {
+  position: relative;
+}
+
+.wrap_svl_center .images_wrap:before {
+  content: "";
+  background: url(../img/bgi/image-51.png) 0 0 no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100vw;
+  height: 92.4vw;
+  transform: translateX(-50%);
+}
+
+.wrap_svl_center .images_wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
