@@ -1504,6 +1504,9 @@ textarea.form-control {
   padding: 0 0 0 30px;
   margin: 21px 0 0;
 }
+.text-with-headline.text-with-headline--faq {
+  padding-bottom: 60px;
+}
 .text-with-headline.text-with-headline--faq .headline {
   width: 300px;
   height: 290px;

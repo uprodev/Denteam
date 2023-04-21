@@ -1,76 +1,75 @@
-// helper functions
-
-function is_touch_device() {
-  if ("ontouchstart" in window) return true;
-  if (window.DocumentTouch && document instanceof DocumentTouch) return true;
-  return window.matchMedia("(pointer: coarse)").matches;
-}
-
-function getScrollBarWidth() {
-  var inner = document.createElement("p");
-  inner.style.width = "100%";
-  inner.style.height = "200px";
-  var outer = document.createElement("div");
-  outer.style.position = "absolute";
-  outer.style.top = "0px";
-  outer.style.left = "0px";
-  outer.style.visibility = "hidden";
-  outer.style.width = "100%";
-  outer.style.height = "150px";
-  outer.style.overflow = "hidden";
-  outer.appendChild(inner);
-  document.body.appendChild(outer);
-  var w1 = inner.offsetWidth;
-  outer.style.overflow = "scroll";
-  var w2 = inner.offsetWidth;
-  if (w1 == w2) w2 = outer.clientWidth;
-  document.body.removeChild(outer);
-  return w1 - w2;
-}
-
-function switchNavToggler() {
-  if (!is_touch_device()) {
-    $(".dropdown-toggle").removeAttr("data-bs-toggle");
-    $(".dropdown").attr("data-bs-hover", "dropdown");
-  } else {
-    $(".dropdown").removeAttr("data-bs-hover");
-    $(".dropdown-toggle").attr("data-bs-toggle", "dropdown");
-  }
-}
-
-function eqHeightReset(elements) {
-  elements.each(function () {
-    $(this).height("auto");
-  });
-}
-
-function eqHeight(elements) {
-  var eqHeight = 0;
-  elements.each(function () {
-    var ht = $(this).height();
-    if (ht > eqHeight) {
-      eqHeight = ht;
-    }
-  });
-  elements.each(function () {
-    $(this).height(eqHeight);
-  });
-}
-
-function elementInViewport(el) {
-  var top = el.offsetTop;
-  var left = el.offsetLeft;
-  var width = el.offsetWidth;
-  var height = el.offsetHeight;
-  while (el.offsetParent) {
-    el = el.offsetParent;
-    top += el.offsetTop;
-    left += el.offsetLeft;
-  }
-  return top < window.pageYOffset + window.innerHeight && left < window.pageXOffset + window.innerWidth && top + height > window.pageYOffset && left + width > window.pageXOffset;
-}
-
 jQuery(document).ready(function ($) {
+  // helper functions
+  function is_touch_device() {
+    if ("ontouchstart" in window) return true;
+    if (window.DocumentTouch && document instanceof DocumentTouch) return true;
+    return window.matchMedia("(pointer: coarse)").matches;
+  }
+
+  function getScrollBarWidth() {
+    var inner = document.createElement("p");
+    inner.style.width = "100%";
+    inner.style.height = "200px";
+    var outer = document.createElement("div");
+    outer.style.position = "absolute";
+    outer.style.top = "0px";
+    outer.style.left = "0px";
+    outer.style.visibility = "hidden";
+    outer.style.width = "100%";
+    outer.style.height = "150px";
+    outer.style.overflow = "hidden";
+    outer.appendChild(inner);
+    document.body.appendChild(outer);
+    var w1 = inner.offsetWidth;
+    outer.style.overflow = "scroll";
+    var w2 = inner.offsetWidth;
+    if (w1 == w2) w2 = outer.clientWidth;
+    document.body.removeChild(outer);
+    return w1 - w2;
+  }
+
+  function switchNavToggler() {
+    if (!is_touch_device()) {
+      $(".dropdown-toggle").removeAttr("data-bs-toggle");
+      $(".dropdown").attr("data-bs-hover", "dropdown");
+    } else {
+      $(".dropdown").removeAttr("data-bs-hover");
+      $(".dropdown-toggle").attr("data-bs-toggle", "dropdown");
+    }
+  }
+
+  function eqHeightReset(elements) {
+    elements.each(function () {
+      $(this).height("auto");
+    });
+  }
+
+  function eqHeight(elements) {
+    var eqHeight = 0;
+    elements.each(function () {
+      var ht = $(this).height();
+      if (ht > eqHeight) {
+        eqHeight = ht;
+      }
+    });
+    elements.each(function () {
+      $(this).height(eqHeight);
+    });
+  }
+
+  function elementInViewport(el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+    while (el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+    return top < window.pageYOffset + window.innerHeight && left < window.pageXOffset + window.innerWidth && top + height > window.pageYOffset && left + width > window.pageXOffset;
+  }
+
   eqHeight($(".cards-list .row .card-title"));
 
   $(window).on("resize", function () {
@@ -204,11 +203,7 @@ jQuery(document).ready(function ($) {
         el: ".steps-slider .swiper-pagination",
         clickable: true,
       },
-      breakpoints: {
-        768: {
-          pagination: false,
-        },
-      },
+
       on: {
         realIndexChange: function (swiper) {
           console.log(swiper.realIndex);
@@ -242,11 +237,9 @@ jQuery(document).ready(function ($) {
     })
     .on("click", ".video-play", function () {
       var video = $(this).prev("video");
-      if (video.get(0).paused) {
-        video.get(0).play();
-      } else {
-        video.get(0).pause();
-      }
+      $(this).hide();
+      video.attr("controls", true);
+      video.get(0).play();
     });
 
   if (document.querySelector(".scroll-bottom")) {

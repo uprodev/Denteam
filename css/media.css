@@ -77,6 +77,9 @@
   .modal-body {
     padding: 62px 100px 75px;
   }
+  .modal-video .modal-body {
+    padding: 50px 20px 20px;
+  }
   #testModal .modal-body {
     padding-bottom: 85px;
   }
@@ -550,6 +553,9 @@
   .steps-slider {
     margin: -60px 0 0;
   }
+  .steps-slider .swiper-pagination {
+    display: none;
+  }
   .steps-slider-pagination {
     padding: 60px 0 0;
     overflow: visible;
@@ -727,6 +733,10 @@
 @media screen and (min-width: 992px) {
   .scroll-bottom {
     right: 56px;
+  }
+
+  .text-with-headline.text-with-headline--faq {
+    padding: 0;
   }
 
   .header {
