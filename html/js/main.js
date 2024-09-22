@@ -218,4 +218,9 @@ jQuery(document).ready(function ($) {
       $(this).next(".text-hidden").slideDown(300);
     }
   });
+
+  $(".category-filter .btn").on("click", function () {
+    $(".category-filter .active").removeClass("active");
+    $(this).parent("li").addClass("active");
+  });
 });
